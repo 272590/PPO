@@ -6,7 +6,8 @@ using namespace std;
 int main()
 {
     ui();
-    studenci();
+    dodawanie_studenci();
+    drukowanie_studenci();
 
     return 0;
 }
