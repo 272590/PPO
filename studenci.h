@@ -1,4 +1,5 @@
 #include <iostream>
 using namespace std;
 
-void studenci();
+void dodawanie_studenci();
+void drukowanie_studenci();
