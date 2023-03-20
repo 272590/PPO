@@ -2,14 +2,13 @@
 using namespace std;
 
 string *tab_stud = new string[20];
-
+string imie, nazwisko;
+    int wiek, index;
+    
 void dodwanie_studenci()
 {
   struct Student
   {
-    string imie, nazwisko;
-    int wiek, index;
-    
     cout << "Podaj imie: \t";
     cin >> imie;
     cout << "Podaj nazwisko: \t";
