@@ -1,0 +1,11 @@
+-deklarcja tablicy
+-program pobiera od uzytkowanika informacje do tablicy 
+-petla do pobierania danych [funkcja pobierania]
+-stworzenie klasy Lista przechowujcej obiekty wprowadzone przez uzytkowanika
+-klasa podzielona na private i public 
+-private zawiera: informacje dotyczace Studentow (imiona, nazwiska, nr indeksow, pesele)
+-public zawiera: string get_imie(), void set_imie(string), int get_wiek(), string get_pesel, int get_index, int numerof_student
+-numer pesel ma byc sprawdzany za pomoca funkcji if (...czy poprawny...) i zwracac odpowiednio wartoci 0,1 lub 2
+-program wylicza wiek za pomoca pozyskanego peselu [int get_wiek]
+
+class Lista 
