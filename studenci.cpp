@@ -1,29 +1,34 @@
 #include <iostream>
+#include <vector>
+#include <string>
+
 using namespace std;
 
-string *tab_stud = new string[20];
-string imie, nazwisko;
-    int wiek, index;
-    
-void dodwanie_studenci()
+void dodajStudenta(vector<Student>& studenci) 
 {
-  struct Student
-  {
-    cout << "Podaj imie: \t";
-    cin >> imie;
-    cout << "Podaj nazwisko: \t";
-    cin >> nazwisko;
-    cout << "Podaj wiek: \t";
-    cin >> wiek;
-    cout << "Podaj nr indeksu: \t";
-    cin >> index;
-  }
+    string imie, nazwisko;
+    int nr_indeksu, wiek;
+
+    cout << "Podaj imię, nazwisko, numer indeksu i wiek studenta: " << endl;
+    cin >> imie >> nazwisko >> nr_indeksu >> wiek;
+
+    studenci.push_back(Student(imie, nazwisko, nr_indeksu, wiek));
 }
 
-void drukowanie_studenci()
+void wypiszStudentow(const vector<Student>& studenci) 
 {
-  for (int i = 0; i < tab_stud.size; i++)
-  {
-    cout << imie << "\t" << nazwisko << "\t" << wiek << "\t" << index << endl;
-  }
+    cout << endl << "Wprowadzono następujące dane studentów:" << endl;
+    for (int i = 0; i < studenci.size(); i++) {
+        cout << "Student " << i+1 << ":" << endl;
+        cout << "Imię: " << studenci[i].imie << endl;
+        cout << "Nazwisko: " << studenci[i].nazwisko << endl;
+        cout << "Numer indeksu: " << studenci[i].nr_indeksu << endl;
+        cout << "Wiek: " << studenci[i].wiek << endl << endl;
 }
+
+
+
+
+
+
+
