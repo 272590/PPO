@@ -1,7 +1,7 @@
 #include <iostream>
 #include <dodaj.h>
 #include <wypisz.h>
-#include <interfejs>
+#include <interfejs.h>
 #include <vector>
 #include <string>
 using namespace std;
