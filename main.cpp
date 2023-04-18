@@ -1,7 +1,7 @@
 #include <iostream>
-#include <ui.h>
 #include <dodaj.h>
 #include <wypisz.h>
+#include <interfejs>
 #include <vector>
 #include <string>
 using namespace std;
@@ -18,14 +18,20 @@ public:
         nazwisko = n;
         nr_indeksu = nr;
         wiek = w;
+        
+        class Pracownik 
+        {
+            
+        };
     }
 };
 
 int main()
 {
-    ui();
+   
     dodajStudenta();
     wypiszStudentow();
+    interfejs();
     
     vector<Student> studenci;
 
