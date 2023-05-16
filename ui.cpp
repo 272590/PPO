@@ -98,14 +98,14 @@ void wyswietl_all(Ludzie & spis)
     for (int i = 0; i < spis.getRozmiar(); i++)
     {
         cout << "\t" << spis.wyswietl_osobe(i).getImie()<<"\t-\t";
-        cout << spis.wyswietl_osobe(i).getNazwisko()<<"\t\t-\t";
+        cout << spis.wyswietl_osobe(i).getNazwisko()<<"\t\t-\t";            //robil -> wskaznikiem?
         cout << spis.wyswietl_osobe(i).getPesel()<<endl;
     }
 }
-/** wyswietl_osobe - funkcja [interfejs]
- * void wyswietl_osobe(Ludzie & spis){
-    Inter *wsk;
-    Student tomek;
-    wsk = &tomek;
-    cout << wsk->toString();
-}*/
+void wyswietl_osobe(Inter *spis)
+{   
+    cout << endl << "Wyswietlam studenta lub pracownika" << endl;
+    cout << "STUDENT: " << spis->getId() << endl;
+    cout << "PRACOWNIK: " << spis->getId() << endl;
+} 
+ 

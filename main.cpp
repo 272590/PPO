@@ -32,8 +32,8 @@ int main()
     case 2:
         wyswietl_all(spis);
         break;
-    /*case 3:
-        wyswietl_osobe(spis);*/
+    case 3:
+        wyswietl_osobe(index);
     case 4:
         cout << "* Zakonczyles dzialanie programu *" << endl;
         koniec = true;

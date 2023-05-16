@@ -32,27 +32,33 @@ class Student : public Osoba, Inter
 {
     private:
         string indeks;
+        string Id;
 
     public:
         void setIndeks(string _index);
         
         string getIndeks();
+        string getId();
 
-        string toString();
+       // string toString();
 };
 
 class Pracownik : public Osoba, Inter
 {
     private:
         string IDprac;
+        string Id;
 
     public:
         void setIDprac(string _IDprac);
 
         string getIDprac();
+        string getId();
 
-        string toString();
+       // string toString();
 };
+
+
 
 class Ludzie
 {
@@ -62,7 +68,9 @@ class Ludzie
     public:
         void dodaj_osobe_do_spisu(Osoba * add_osoba);
         Osoba wyswietl_osobe(int index);
+        
         /** getRozmiar - 
          @return - rozmiar spisu */
         int getRozmiar();
 };
+

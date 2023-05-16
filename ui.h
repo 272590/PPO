@@ -11,6 +11,6 @@ using namespace std;
 
 //  funkcja wyswietl konretna osobe -----------------------------------------------------------------------------------------
 
-    void wyswietl_osobe(Ludzie & spis);
+    void wyswietl_osobe(Inter * index);
 
     

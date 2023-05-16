@@ -58,10 +58,14 @@ string Student::getIndeks()
 {
     return indeks;
 }
-string Student::toString()
+string Student::getId()
+{
+    return Id;
+}
+/**string Student::toString()
 {
     return "Student: ";
-}
+}*/
  // tylko dla Pracownik ---------------------------------------------------------------------------------------------------
 
 void Pracownik::setIDprac(string _IDprac)
@@ -72,10 +76,14 @@ string Pracownik::getIDprac()
 {
     return IDprac;
 }
-string Pracownik::toString()
+string Pracownik::getId()
+{
+    return Id;
+}
+/**string Pracownik::toString()
 {
     return "Pracownik: ";
-}
+}*/
 // funkcje klasy Ludzie , vector spis ----------------------------------------------------------------------------------------
 
 void Ludzie::dodaj_osobe_do_spisu(Osoba * add_osoba)
